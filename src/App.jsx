@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Navbar from "./components/NavBar.jsx";
 
 function App() {
   const url = import.meta.env.VITE_API_URL;
@@ -7,6 +8,7 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <h1>Working on my art gallery</h1>
     </>
   );
