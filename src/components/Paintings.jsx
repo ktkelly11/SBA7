@@ -9,7 +9,7 @@ function Paintings() {
     async function fetchAPI() {
       try {
         const response = await fetch(
-          "https://api.europeana.eu/record/v2/search.json?query=Manet",
+          "https://api.europeana.eu/record/v2/search.json?query=Renoir",
           {
             headers: {
               "X-Api-Key": api,
