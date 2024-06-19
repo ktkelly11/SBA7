@@ -33,7 +33,16 @@ function Paintings() {
             : paintings.map((painting) => {
                 return <img src={painting.edmPreview[0]} />;
               })}
+
+          {/* Supposed to display title in English */}
+          {/* <p>{items.dcTitleLangAware.en}</p> */}
           <p>{items.country}</p>
+          <p>{items.dataProvider}</p>
+          {/* This should give an English description: */}
+          {/* <p>{items.dcDescriptionLangAware.en}</p> */}
+          {/* {items.length === 0 ? "" : items.map((items) => {
+            return <p {items.dcDescriptionLangAware.en}/>
+        })} */}
         </div>
       ))}
 
