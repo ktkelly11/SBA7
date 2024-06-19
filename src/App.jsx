@@ -2,12 +2,13 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/NavBar.jsx";
 import Paintings from "./components/Paintings.jsx";
+import Button from "./components/Button.jsx";
 
 function App() {
   // const url = `https://api.europeana.eu/record/v2/search.json?query=${query}`;
   // console.log(url);
-  const api = import.meta.env.VITE_X_API_KEY;
-  const [paintings, setPaintings] = useState([]);
+  // const api = import.meta.env.VITE_X_API_KEY;
+  // const [paintings, setPaintings] = useState([]);
 
   // useEffect(() => {
   //   getPaintings();
@@ -44,6 +45,15 @@ function App() {
 
   return (
     <>
+      {/* <Button
+        onClick={() => {
+          const newTheme = theme === "dark" ? "light" : "dark";
+          localStorage.setItem("theme", newTheme);
+          setTheme(newTheme);
+        }}
+      >
+        {theme === "dark" ? "Light Mode" : "Dark Mode"}
+      </Button> */}
       <Navbar />
       <Paintings />
       <h1>Working on my art gallery</h1>

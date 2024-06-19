@@ -1,4 +1,13 @@
 .paintings {
   margin: 40px;
-  max-width: 100px;
+  /* max-width: 100px; */
 }
+
+/* .works {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info {
+  margin-top: auto;
+} */

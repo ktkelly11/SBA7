@@ -28,23 +28,27 @@ function Paintings() {
   return (
     <>
       {paintings.map((items) => (
-        <div key={items.id}>
-          <div key="paintings" className="paintings">
-            <img src={items.edmPreview[0]} alt="" />
-            {/* {paintings.length === 0
+        <div key={items.id} className="works">
+          <div className="images">
+            <div key="paintings" className="paintings">
+              <img src={items.edmPreview[0]} alt="" />
+              {/* {paintings.length === 0
               ? ""
               : paintings.map((painting) => {
                   return <img src={painting.edmPreview[0]} />;
                 })} */}
+            </div>
           </div>
           {/* Supposed to display title in English */}
           {/* <p>{items.dcTitleLangAware.en}</p> */}
-          <p key="country" className="country">
-            {items.country}
-          </p>
-          <p key="museum" className="museum">
-            {items.dataProvider}
-          </p>
+          <div className="info">
+            <p key="country" className="country">
+              {items.country}
+            </p>
+            <p key="museum" className="museum">
+              {items.dataProvider}
+            </p>
+          </div>
           {/* This should give an English description: */}
           {/* <p>{items.dcDescriptionLangAware.en}</p> */}
           {/* {items.length === 0 ? "" : items.map((items) => {
