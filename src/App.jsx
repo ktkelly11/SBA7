@@ -4,7 +4,7 @@ import Navbar from "./components/NavBar.jsx";
 import Paintings from "./components/Paintings.jsx";
 import Heading from "./components/Heading.jsx";
 // import { reducerFn } from "./utils/reducerFn.jsx";
-// import { useReducer } from "react";
+import { useReducer } from "react";
 
 function App() {
   // const url = `https://api.europeana.eu/record/v2/search.json?query=${query}`;
@@ -48,6 +48,21 @@ function App() {
   // const initialState = {};
   // const [state, dispatch] = useReducer(reducerFn, initialState);
 
+  const initialState = { input: "" };
+  const reducer = (state, action) => {
+    switch (action.type) {
+      case "input":
+        return { ...state, input: action.payload };
+      default:
+        console.log(`Action ${action.type} not found`);
+        return state;
+    }
+  };
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const handleInputChange = (e) => {
+    dispatchEvent({ type: "input", payload: e.target.value });
+  };
+
   return (
     <>
       <Navbar />
@@ -55,6 +70,8 @@ function App() {
       <Paintings />
       {/* <h1>Working on my art gallery</h1> */}
       <h1>Thanks for visiting the online art gallery!</h1>
+      <input type="text" value={state.input} onChange={handleInputChange} />
+      <p className="output">{state.input.trim() || "User input"}</p>
     </>
   );
 }
