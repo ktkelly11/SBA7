@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/NavBar.jsx";
 import Paintings from "./components/Paintings.jsx";
-import Button from "./components/Button.jsx";
+// import Button from "./components/Button.jsx";
+import Heading from "./components/Heading.jsx";
 
 function App() {
   // const url = `https://api.europeana.eu/record/v2/search.json?query=${query}`;
@@ -55,8 +56,10 @@ function App() {
         {theme === "dark" ? "Light Mode" : "Dark Mode"}
       </Button> */}
       <Navbar />
+      <Heading />
       <Paintings />
-      <h1>Working on my art gallery</h1>
+      {/* <h1>Working on my art gallery</h1> */}
+      <h1>Thanks for visiting the online art gallery!</h1>
     </>
   );
 }

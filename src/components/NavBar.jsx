@@ -3,13 +3,10 @@ import "./NavBar.css";
 function Navbar() {
   return (
     <div className="navbar">
-      <h1 className="title">Welcome to the European Artwork Image Search</h1>
-      <h2 className="sub-heading">Enter an artists name below</h2>
-      <input
-        type="text"
-        placeholder="Search for an artist's work"
-        id="Search bar"
-      />
+      <button>Home</button>
+      <button>Artwork</button>
+      <button>Paintings</button>
+      <button>Contact</button>
     </div>
   );
 }
