@@ -4,7 +4,7 @@ import Button from "./Button.jsx";
 import { ThemeContext } from "../context/ThemeContext.js";
 
 function Navbar() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
 
   useEffect(() => {
     const themeLocal = localStorage.getItem("theme");
