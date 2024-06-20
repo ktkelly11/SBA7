@@ -19,6 +19,8 @@ This is in a public repository on GitHub.
 
 ## Live Site
 
+https://singular-semolina-bc1e15.netlify.app/
+
 ## Unsolved Problems
 
 A problem that I would love to return to is my search bar feature. I was unable to make it work, but would love to be able to use the search capabilities of the API to find works by other artists.
