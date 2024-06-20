@@ -40,7 +40,11 @@ function Paintings() {
             </div>
           </div>
           {/* Supposed to display title in English */}
-          {/* <p>{items.dcTitleLangAware.en}</p> */}
+          {items?.dcTitleLangAware?.en ? (
+            <p>{items.dcTitleLangAware.en[0]}</p>
+          ) : (
+            ""
+          )}
           <div className="info">
             <p key="country" className="country">
               {items.country}
@@ -54,6 +58,13 @@ function Paintings() {
           {/* {items.length === 0 ? "" : items.map((items) => {
             return <p {items.dcDescriptionLangAware.en}/>
         })} */}
+
+          {/* Works but is too long a description */}
+          {/* {items?.dcDescriptionLangAware?.en ? (
+            <p>{items.dcDescriptionLangAware.en[0]}</p>
+          ) : (
+            ""
+          )} */}
         </div>
       ))}
 
