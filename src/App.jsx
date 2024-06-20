@@ -1,8 +1,10 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import "./App.css";
 import Navbar from "./components/NavBar.jsx";
 import Paintings from "./components/Paintings.jsx";
 import Heading from "./components/Heading.jsx";
+// import { reducerFn } from "./utils/reducerFn.jsx";
+// import { useReducer } from "react";
 
 function App() {
   // const url = `https://api.europeana.eu/record/v2/search.json?query=${query}`;
@@ -42,6 +44,9 @@ function App() {
   //   }
   //   fetchAPI();
   // }, []);
+
+  // const initialState = {};
+  // const [state, dispatch] = useReducer(reducerFn, initialState);
 
   return (
     <>
