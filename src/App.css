@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+#root-light {
+  color: #222;
+  background: #fff;
+}
+
+#root-dark {
+  color: #fff;
+  background: rgb(23, 32, 42);
+}
+
+.button {
+  border: 1px solid #777;
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.button-dark {
+  background: #222;
+  color: #fff;
+}
+.button-light {
+  background: #fff;
+  color: #222;
+}
