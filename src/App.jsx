@@ -60,7 +60,7 @@ function App() {
   };
   const [state, dispatch] = useReducer(reducer, initialState);
   const handleInputChange = (e) => {
-    dispatchEvent({ type: "input", payload: e.target.value });
+    dispatch({ type: "input", payload: e.target.value });
   };
 
   return (
